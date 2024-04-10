@@ -98,6 +98,8 @@ header .nav a:hover{
     transition: 1s;
     height: 100%;
 }
+
+
 /* respon */
 @media(max-width:960px){
   header .nav{

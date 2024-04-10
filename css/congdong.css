@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.headerr{
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  min-height: 0vh  ;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+}
+header{
+  z-index: 999;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: #92e981;
+  border-bottom-left-radius:50px;
+  border-bottom-right-radius:50px;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo{
+  position: relative;
+  color: #f2f2f2;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+header .nav a{
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: 500;
+   letter-spacing: 1px;
+   padding: 2px 15px;
+   border-radius: 20px;
+   transition: 0.3s;
+   font-size: 18px;
+   transition-property: background;
+}
+header .nav a:not(:last-child){
+  margin-right: 30px;
+}
+header .nav a:hover{
+  background: #693bc6;
+}
+.label{
+  display: none;
+}
+#check{
+  z-index: 3;
+  display: none;
+}
+.face{
+  width: 100%;
+  display: flex;
+  margin-top: 70px;
+}
+.face-left{
+  width: 20%;
+  overflow-y: scroll;
+  cursor: pointer;
+  height: 710px;
+}
+.face-div:hover{
+  background-color: antiquewhite;
+}
+.face-div{
+  display: flex;
+  padding: 20px 0px;
+  align-items: center;
+}
+.face-div h3{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.face-div i{
+  font-size: 30px;
+}
+.face-center{
+  width: 60%;
+  padding: 50px 100px;
+  overflow-y: scroll;
+  height: 710px;
+  position: relative;
+}
+.face-center-status{
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  box-shadow: 1px 1px 1px 1px black;
+  top: 20%;
+  display: none;
+  background-color: #fff;
+}
+.face-center-status form{
+  padding-bottom: 100px;
+  padding-left: 50px;
+}
+.face-center-status input{
+  width: 80%;
+  height: 35px;
+  background-color: #fff;
+  border: 1px solid white;
+  font-size: 20px;
+}
+input[type="file"]{
+  padding-left: 50px;
+  width: 100%;
+}
+.status-btn button{
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 20px;
+  background-color: rgb(71, 71, 244);
+  color: #fff;
+}
+.img{
+  padding-bottom: 50px;
+}
+.face-right{
+  width: 20%;
+  overflow-y: scroll;
+  height: 710px;
+}
+.face-center-check{
+  display: flex;
+  cursor: pointer;
+}
+.face-center-check p{
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+.face-center-check p:hover{
+  background-color: antiquewhite;
+}
+.face-center-div, .face-center-divv{
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+}
+.face-center-div input{
+  width: 80%;
+  border-radius: 50px;
+  height: 50px;
+  background-color: #dedede;
+  margin-left: 30px;
+  padding-left: 20px;
+}
+.face-center-div i,.face-center-divv i{
+  font-size: 50px;
+}
+.face-center-str, .face-center-str{
+  width: 100%;
+  box-shadow: 1px 1px 1px 1px black;
+}
+.face-center-str img, .face-center-str img{
+  width: 100%;
+}
+.face-center-str video{
+  width: 100%;
+}
+#checkk:checked ~ .face-center-str{
+  opacity: 0.3;
+}
+#checkk:checked ~ .face-center-status{
+  display: block;
+}
+.like-share-cmt{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+.like{
+  padding: 5px 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+}
+.blu{
+  position: relative;
+}
+.like-hover{
+  position: absolute;
+  display: flex;
+  top:-47px;
+  left: 1px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px black;
+  display: none;
+}
+.blu:hover .like-hover{
+  display: flex;
+}
+.like-hover i{
+  padding-left: 20px;
+  font-size: 50px;
+}
+.like:hover{
+  background-color: #dedede;
+}
+.like-hover i:hover{
+  transform: scale(1.2);
+
+  color: blue;
+}
+.blu:active{
+  transform: scale(1.1);
+  color: blue;
+}
+.like i{
+  font-size: 25px;
+}
+@media(max-width:960px){
+  .face-left{
+      width: 10%;
+      overflow-y: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+  .face-div{
+      transition: 0.5s;
+  }
+  .face-div:hover{
+      transform: scale(1.3);
+      background-color: #fff;
+      color: #e31c3d  ;
+  }
+  .face-left i{
+      font-size: 25px;
+  }
+ .face-left h3{
+  display: none;
+ }
+ .face-right{
+  display: none;
+ }
+ .face-center{
+  width: 100%;
+  padding: 0;
+ }
+ .face-center-check p{
+  font-size:10px;
+ }
+}
+
+
+.footer{
+    background: url("../img-web/Hinh-nen-Cho-1.webp") no-repeat;
+    background-size: cover;
+    padding: 3rem 7%;
+  }
+  .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #Fff;
+  }
+  .footer .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #Fff;
+  }
+  .footer .box-container .box a{
+    text-decoration: none;
+  }
+  .footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 1rem 0;
+  }
+  .footer .box-container .box .links i{
+    color: #ffffff;
+    padding-right: 0.5rem;
+  }
+  .footer .box-container .box .links:hover i{
+    color: #000000;
+  }
+  .footer .box-container .box .email{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    text-transform: none;
+  }
+  .footer .box-container .box .share a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    border-radius: 5rem;
+    margin-right: .8rem;
+    text-align: center;
+    margin-top: 1.4rem;
+    transition: 1s;
+  }
+  .footer .box-container .box .share a:hover{
+    transform: scale(1.3);
+  }
+  .footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2.5rem;
+    border-top: .2rem solid rgba(0, 0, 0, 0.2);
+  }
